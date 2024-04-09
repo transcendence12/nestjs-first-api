@@ -2,7 +2,7 @@ import { Injectable } from '@nestjs/common';
 
 @Injectable()
 export class UsersService {
-  users = [
+  private users = [
     { id: 1, name: 'John Doe', email: 'john@example.com', role: 'admin' },
     { id: 2, name: 'Alice Smith', email: 'alice@example.com', role: 'intern' },
     { id: 3, name: 'Bob Johnson', email: 'bob@example.com', role: 'engineer' },
